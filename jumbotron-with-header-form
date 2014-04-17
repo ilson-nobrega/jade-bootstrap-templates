@@ -1,0 +1,52 @@
+html
+    head
+        <script src="jquery/dist/jquery.min.js"></script>
+        <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="bootstrap/dist/css/bootstrap-theme.min.css">
+        <script src="bootstrap/dist/js/bootstrap.min.js"></script>
+        <link href="fontawesome/css/font-awesome.css" rel="stylesheet">
+        
+    body
+        .navbar.navbar-inverse.navbar-fixed-top(role="navigation")
+            .container
+                .navbar-header
+                    button.navbar-toggle(data-toggle="collapse", data-target=".navbar-collapse")
+                        span.sr-only: | Toggle Navigation
+                        span.icon-bar
+                        span.icon-bar
+                        span.icon-bar
+                    a.navbar-brand: | Inóbrega
+                .navbar-collapse.collapse
+                    form.navbar-form.navbar-right(role="form")
+                        .form-group
+                            input.form-control(placeholder="Email", type="text")
+                        .form-group
+                            input.form-control(placeholder="Password", type="password")
+                        .button.btn.btn-success(type="submit")
+                            | Send
+        .jumbotron
+            .container
+                h1: | Hello World!
+                p: | This is a little Hello World from Jade (Template Engine) using Bootstrap
+                p: a.btn.btn-primary.btn-lg(role="button")
+                        | Get started
+        .container
+            .row
+                .col-md-4
+                    h2: | Inóbrega
+                    p: | Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+                    a.btn.btn-default(role="button")
+                        | View details &raquo;
+                .col-md-4
+                    h2: | Inóbrega
+                    p: | Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+                    a.btn.btn-default(role="button")
+                        | View details &raquo;
+                .col-md-4
+                    h2: | Inóbrega
+                    p: | Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+                    a.btn.btn-default(role="button")
+                        | View details &raquo;
+            hr
+            footer
+                p: &copy; Twitter Bootstrap - Inobrega Testing 2014
